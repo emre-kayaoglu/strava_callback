@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    (function() {
+      // preserve query string and hash from Strava
+      var params = window.location.search + window.location.hash;
+      // forward to your app's custom scheme
+      window.location = "myapp://auth" + params;
+    })();
+  </script>
+</head>
+<body>
+  Redirecting to app…
+</body>
+</html>
